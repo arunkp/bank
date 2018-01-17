@@ -1,0 +1,162 @@
+body {
+  background: #E2E6E9;
+  color: #253238;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu; }
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+.btn {
+  padding-left: 25px;
+  padding-right: 25px; }
+  .btn.btn-primary {
+    background: #00A7F7;
+    border-radius: 18px;
+    border: none; }
+
+.top_header {
+  text-align: center;
+  padding-top: 30px; }
+  .top_header h1 {
+    margin-top: 0;
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    margin-bottom: 30px; }
+  .top_header p {
+    padding-top: 5px;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+    margin-bottom: 40px; }
+
+.form-group label {
+  color: #77909D;
+  font-weight: 500; }
+.form-group input,
+.form-group select,
+.form-group textarea {
+  border: 1px solid #E6ECEF;
+  box-shadow: none;
+  border-radius: 4px; }
+.form-group span.error {
+  position: absolute;
+  font-size: 12px;
+  color: #F13C20; }
+
+.signup_form {
+  background: #fff;
+  border-radius: 4px;
+  padding-bottom: 30px;
+  box-shadow: 0 2px 17px 0 rgba(0, 0, 0, 0.08); }
+  .signup_form ul.nav-tabs.nav.nav-justified {
+    padding-left: 25px;
+    padding-right: 25px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08); }
+    .signup_form ul.nav-tabs.nav.nav-justified li a {
+      background: #fff;
+      border: none;
+      color: #8FA4AF;
+      padding-top: 26px;
+      padding-bottom: 26px; }
+    .signup_form ul.nav-tabs.nav.nav-justified li.active a {
+      color: #00A7F7;
+      background: #fff;
+      border: none;
+      font-weight: 600;
+      position: relative; }
+      .signup_form ul.nav-tabs.nav.nav-justified li.active a:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-bottom: 2px solid #00A7F7; }
+  .signup_form .tab-content {
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px; }
+    .signup_form .tab-content .tab-pane header {
+      font-size: 23px;
+      font-weight: 300;
+      padding-bottom: 20px;
+      letter-spacing: 0.3px;
+      color: #253238; }
+    .signup_form .tab-content .tab-pane form {
+      color: #253238; }
+      .signup_form .tab-content .tab-pane form .form-group:not(.no-bottom) {
+        margin-bottom: 30px; }
+      .signup_form .tab-content .tab-pane form .form-group {
+        position: relative; }
+        .signup_form .tab-content .tab-pane form .form-group input:not(.name).error,
+        .signup_form .tab-content .tab-pane form .form-group select.error,
+        .signup_form .tab-content .tab-pane form .form-group textarea.error {
+          position: static;
+          border-color: #F13C20;
+          background: rgba(241, 60, 32, 0.16); }
+        .signup_form .tab-content .tab-pane form .form-group .group-error {
+          border-color: #F13C20;
+          background: rgba(241, 60, 32, 0.16); }
+        .signup_form .tab-content .tab-pane form .form-group .home_phone,
+        .signup_form .tab-content .tab-pane form .form-group .mobile_phone,
+        .signup_form .tab-content .tab-pane form .form-group .work_phone {
+          position: relative; }
+          .signup_form .tab-content .tab-pane form .form-group .home_phone .cc,
+          .signup_form .tab-content .tab-pane form .form-group .mobile_phone .cc,
+          .signup_form .tab-content .tab-pane form .form-group .work_phone .cc {
+            position: absolute;
+            bottom: 3px;
+            left: 2px;
+            z-index: 1; }
+            .signup_form .tab-content .tab-pane form .form-group .home_phone .cc select,
+            .signup_form .tab-content .tab-pane form .form-group .mobile_phone .cc select,
+            .signup_form .tab-content .tab-pane form .form-group .work_phone .cc select {
+              border: none;
+              width: 65px;
+              height: 28px; }
+          .signup_form .tab-content .tab-pane form .form-group .home_phone input,
+          .signup_form .tab-content .tab-pane form .form-group .mobile_phone input,
+          .signup_form .tab-content .tab-pane form .form-group .work_phone input {
+            padding-left: 75px; }
+        .signup_form .tab-content .tab-pane form .form-group.no-bottom {
+          margin-bottom: 0; }
+      .signup_form .tab-content .tab-pane form .name-group {
+        position: relative;
+        border: 1px solid #E6ECEF;
+        border-radius: 4px; }
+        .signup_form .tab-content .tab-pane form .name-group.error {
+          position: static;
+          border-color: #F13C20;
+          background: rgba(241, 60, 32, 0.16); }
+        .signup_form .tab-content .tab-pane form .name-group > .form-group {
+          width: 32.7%;
+          display: inline-block;
+          vertical-align: top;
+          position: relative;
+          margin-bottom: 0; }
+          .signup_form .tab-content .tab-pane form .name-group > .form-group span.error {
+            bottom: -19px; }
+          .signup_form .tab-content .tab-pane form .name-group > .form-group input.error {
+            position: relative; }
+          .signup_form .tab-content .tab-pane form .name-group > .form-group.middle:before, .signup_form .tab-content .tab-pane form .name-group > .form-group.last:before {
+            content: "\\";
+            position: absolute;
+            left: 0;
+            top: 7px;
+            z-index: 11;
+            color: rgba(37, 50, 56, 0.26); }
+          .signup_form .tab-content .tab-pane form .name-group > .form-group input {
+            border: none;
+            background: transparent; }
+            .signup_form .tab-content .tab-pane form .name-group > .form-group input:focus {
+              outline: 0;
+              box-shadow: none; }
+
+.disabledTab {
+  pointer-events: none; }
+
+.bold {
+  font-weight: bold; }
+
+/*# sourceMappingURL=style.css.map */
