@@ -45,113 +45,228 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 12px;
   color: #F13C20; }
 
+.final_msg {
+  position: absolute;
+  display: none;
+  z-index: 99;
+  background: #fff;
+  border-radius: 4px;
+  padding-bottom: 30px;
+  box-shadow: 0 2px 17px 0 rgba(0, 0, 0, 0.08);
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-right: 25px; }
+  .final_msg .msg {
+    padding-top: 40px;
+    padding-bottom: 40px; }
+    .final_msg .msg.accepted, .final_msg .msg.rejected {
+      display: none;
+      text-align: center; }
+      .final_msg .msg.accepted .title, .final_msg .msg.rejected .title {
+        color: #77909D;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 16px;
+        margin-bottom: 5px; }
+      .final_msg .msg.accepted .acc_num, .final_msg .msg.rejected .acc_num {
+        position: relative;
+        background: #F8FAFC;
+        color: #00A7F7;
+        font-size: 32px;
+        font-weight: 600;
+        padding: 10px 24px;
+        letter-spacing: 0.5px;
+        border-radius: 4px;
+        display: inline-block;
+        margin: auto;
+        border: 1px dashed #DBE5EA; }
+        .final_msg .msg.accepted .acc_num .icon, .final_msg .msg.rejected .acc_num .icon {
+          position: absolute;
+          right: 0;
+          bottom: 0; }
+      .final_msg .msg.accepted h1, .final_msg .msg.rejected h1 {
+        font-weight: 400;
+        font-size: 24px;
+        margin-top: 40px;
+        color: #253238; }
+        .final_msg .msg.accepted h1 img, .final_msg .msg.rejected h1 img {
+          vertical-align: top;
+          margin-top: 4px;
+          margin-right: 7px;
+          width: 20px; }
+      .final_msg .msg.accepted p, .final_msg .msg.rejected p {
+        width: 70%;
+        margin: auto; }
+      .final_msg .msg.accepted .phone_num, .final_msg .msg.rejected .phone_num {
+        color: #00A7F7;
+        font-weight: 600; }
+    .final_msg .msg.rejected {
+      display: block !important; }
+      .final_msg .msg.rejected .acc_num {
+        color: #77909D;
+        background: #fff; }
+
+.fade-in {
+  -webkit-animation: fadein 2s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 2s;
+  /* Internet Explorer */
+  -o-animation: fadein 2s;
+  /* Opera < 12.1 */
+  animation: fadein 2s; }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 .signup_form {
   background: #fff;
   border-radius: 4px;
   padding-bottom: 30px;
   box-shadow: 0 2px 17px 0 rgba(0, 0, 0, 0.08); }
-  .signup_form ul.nav-tabs.nav.nav-justified {
+  .signup_form .tab_container ul.nav-tabs.nav.nav-justified {
     padding-left: 25px;
     padding-right: 25px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08); }
-    .signup_form ul.nav-tabs.nav.nav-justified li a {
+    .signup_form .tab_container ul.nav-tabs.nav.nav-justified li a {
       background: #fff;
       border: none;
       color: #8FA4AF;
       padding-top: 26px;
       padding-bottom: 26px; }
-    .signup_form ul.nav-tabs.nav.nav-justified li.active a {
+    .signup_form .tab_container ul.nav-tabs.nav.nav-justified li.active a {
       color: #00A7F7;
       background: #fff;
       border: none;
       font-weight: 600;
       position: relative; }
-      .signup_form ul.nav-tabs.nav.nav-justified li.active a:before {
+      .signup_form .tab_container ul.nav-tabs.nav.nav-justified li.active a:before {
         content: "";
         position: absolute;
         left: 0;
         right: 0;
         bottom: 0;
         border-bottom: 2px solid #00A7F7; }
-  .signup_form .tab-content {
+  .signup_form .tab_container .tab-content {
     padding-top: 25px;
     padding-left: 25px;
     padding-right: 25px; }
-    .signup_form .tab-content .tab-pane header {
+    .signup_form .tab_container .tab-content .tab-pane header {
       font-size: 23px;
       font-weight: 300;
       padding-bottom: 20px;
       letter-spacing: 0.3px;
       color: #253238; }
-    .signup_form .tab-content .tab-pane form {
+    .signup_form .tab_container .tab-content .tab-pane form {
       color: #253238; }
-      .signup_form .tab-content .tab-pane form .form-group:not(.no-bottom) {
+      .signup_form .tab_container .tab-content .tab-pane form .form-group:not(.no-bottom) {
         margin-bottom: 30px; }
-      .signup_form .tab-content .tab-pane form .form-group {
+      .signup_form .tab_container .tab-content .tab-pane form .form-group {
         position: relative; }
-        .signup_form .tab-content .tab-pane form .form-group input:not(.name).error,
-        .signup_form .tab-content .tab-pane form .form-group select.error,
-        .signup_form .tab-content .tab-pane form .form-group textarea.error {
+        .signup_form .tab_container .tab-content .tab-pane form .form-group input:not(.name).error,
+        .signup_form .tab_container .tab-content .tab-pane form .form-group select.error,
+        .signup_form .tab_container .tab-content .tab-pane form .form-group textarea.error {
           position: static;
           border-color: #F13C20;
           background: rgba(241, 60, 32, 0.16); }
-        .signup_form .tab-content .tab-pane form .form-group .group-error {
+        .signup_form .tab_container .tab-content .tab-pane form .form-group .group-error {
           border-color: #F13C20;
           background: rgba(241, 60, 32, 0.16); }
-        .signup_form .tab-content .tab-pane form .form-group .home_phone,
-        .signup_form .tab-content .tab-pane form .form-group .mobile_phone,
-        .signup_form .tab-content .tab-pane form .form-group .work_phone {
+        .signup_form .tab_container .tab-content .tab-pane form .form-group .home_phone,
+        .signup_form .tab_container .tab-content .tab-pane form .form-group .mobile_phone,
+        .signup_form .tab_container .tab-content .tab-pane form .form-group .work_phone {
           position: relative; }
-          .signup_form .tab-content .tab-pane form .form-group .home_phone .cc,
-          .signup_form .tab-content .tab-pane form .form-group .mobile_phone .cc,
-          .signup_form .tab-content .tab-pane form .form-group .work_phone .cc {
+          .signup_form .tab_container .tab-content .tab-pane form .form-group .home_phone .cc,
+          .signup_form .tab_container .tab-content .tab-pane form .form-group .mobile_phone .cc,
+          .signup_form .tab_container .tab-content .tab-pane form .form-group .work_phone .cc {
             position: absolute;
             bottom: 3px;
             left: 2px;
             z-index: 1; }
-            .signup_form .tab-content .tab-pane form .form-group .home_phone .cc select,
-            .signup_form .tab-content .tab-pane form .form-group .mobile_phone .cc select,
-            .signup_form .tab-content .tab-pane form .form-group .work_phone .cc select {
+            .signup_form .tab_container .tab-content .tab-pane form .form-group .home_phone .cc select,
+            .signup_form .tab_container .tab-content .tab-pane form .form-group .mobile_phone .cc select,
+            .signup_form .tab_container .tab-content .tab-pane form .form-group .work_phone .cc select {
               border: none;
               width: 65px;
               height: 28px; }
-          .signup_form .tab-content .tab-pane form .form-group .home_phone input,
-          .signup_form .tab-content .tab-pane form .form-group .mobile_phone input,
-          .signup_form .tab-content .tab-pane form .form-group .work_phone input {
+          .signup_form .tab_container .tab-content .tab-pane form .form-group .home_phone input,
+          .signup_form .tab_container .tab-content .tab-pane form .form-group .mobile_phone input,
+          .signup_form .tab_container .tab-content .tab-pane form .form-group .work_phone input {
             padding-left: 75px; }
-        .signup_form .tab-content .tab-pane form .form-group.no-bottom {
+        .signup_form .tab_container .tab-content .tab-pane form .form-group.no-bottom {
           margin-bottom: 0; }
-      .signup_form .tab-content .tab-pane form .name-group {
+      .signup_form .tab_container .tab-content .tab-pane form .name-group {
         position: relative;
         border: 1px solid #E6ECEF;
         border-radius: 4px; }
-        .signup_form .tab-content .tab-pane form .name-group.error {
+        .signup_form .tab_container .tab-content .tab-pane form .name-group.error {
           position: static;
           border-color: #F13C20;
           background: rgba(241, 60, 32, 0.16); }
-        .signup_form .tab-content .tab-pane form .name-group > .form-group {
+        .signup_form .tab_container .tab-content .tab-pane form .name-group > .form-group {
           width: 32.7%;
           display: inline-block;
           vertical-align: top;
           position: relative;
           margin-bottom: 0; }
-          .signup_form .tab-content .tab-pane form .name-group > .form-group span.error {
+          .signup_form .tab_container .tab-content .tab-pane form .name-group > .form-group span.error {
             bottom: -19px; }
-          .signup_form .tab-content .tab-pane form .name-group > .form-group input.error {
+          .signup_form .tab_container .tab-content .tab-pane form .name-group > .form-group input.error {
             position: relative; }
-          .signup_form .tab-content .tab-pane form .name-group > .form-group.middle:before, .signup_form .tab-content .tab-pane form .name-group > .form-group.last:before {
+          .signup_form .tab_container .tab-content .tab-pane form .name-group > .form-group.middle:before, .signup_form .tab_container .tab-content .tab-pane form .name-group > .form-group.last:before {
             content: "\\";
             position: absolute;
             left: 0;
             top: 7px;
             z-index: 11;
             color: rgba(37, 50, 56, 0.26); }
-          .signup_form .tab-content .tab-pane form .name-group > .form-group input {
+          .signup_form .tab_container .tab-content .tab-pane form .name-group > .form-group input {
             border: none;
             background: transparent; }
-            .signup_form .tab-content .tab-pane form .name-group > .form-group input:focus {
+            .signup_form .tab_container .tab-content .tab-pane form .name-group > .form-group input:focus {
               outline: 0;
               box-shadow: none; }
+    .signup_form .tab_container .tab-content .tab-pane .sub-text {
+      color: #77909D;
+      font-weight: 500; }
+    .signup_form .tab_container .tab-content .tab-pane .uploadbox .dropzone {
+      border: 2px dashed #00A7F7;
+      border-radius: 5px;
+      margin-bottom: 30px;
+      background: rgba(0, 0, 0, 0.01); }
+      .signup_form .tab_container .tab-content .tab-pane .uploadbox .dropzone .dz-message {
+        padding-top: 15px;
+        font-size: 13px;
+        color: rgba(0, 0, 0, 0.3);
+        font-weight: 400;
+        opacity: 1; }
 
 .disabledTab {
   pointer-events: none; }
