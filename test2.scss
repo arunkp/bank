@@ -1,0 +1,212 @@
+@import "default";
+
+body {
+    color: #364462;
+}
+
+nav.navbar {
+    background-color: #fff;
+    border-radius: 0;
+    margin-bottom: 0;
+    .navbar-nav {
+        li {
+            a {
+                padding-top: 25px;
+                padding-bottom: 25px;
+            }
+        }
+    }
+    .navbar-brand {
+        padding: 25px 15px;
+    }
+}
+
+.list-title {
+    margin-top: 16px;
+    font-weight: 600;
+    span {
+        font-size: 14px;
+    }
+}
+
+.container-fluid {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.topbar_nav {
+    border-bottom: 1px solid #ECEFF1;
+    background: #fff;
+    .search_nav {
+        padding: 20px 0;
+        .search_box {
+            border: 1px solid #DBDBDB !important;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+            border-radius: 4px;
+            .input-group {
+                .input-group-addon {
+                    background: transparent;
+                    border: none;
+                    color: rgb(118, 118, 118);
+                    font-size: 24px;
+                }
+                .form-control {
+                    border: none;
+                    height: 46px;
+                    box-shadow: none;
+                    font-size: 19px;
+                    line-height: 24px;
+                    &:focus {
+                        border-color: #ccc;
+                    }
+                }
+            }
+        }
+        .page_act {
+            .btn {
+                padding-top: 9px;
+                padding-bottom: 9px;
+                margin-top: 4px;
+            }
+        }
+    }
+}
+
+.search_nav-options {
+    background: #fff;
+    padding: 15px 25px;
+    border-bottom: 1px solid #ECEFF1;
+    .btn {
+        padding: 6px 12px;
+        font-size: 15px;
+        line-height: 18px;
+        &.active {
+            background: rgba(0, 167, 247, 0.1);
+            color: #00A7F7;
+            box-shadow: none;
+            border-color: #00A7F7;
+        }
+    }
+    .filter {
+        float: left;
+        margin-left: 8px;
+        &:first-child {
+            margin-left: 0;
+        }
+        &.price-filter {
+            .dropdown-menu {
+                min-width: 250px;
+            }
+            .price_range {
+                padding: 15px 15px 10px 15px;
+                .price {
+                    font-size: 24px;
+                    font-weight: 300;
+                    margin-bottom: 10px;
+                }
+                .slider {
+                    margin-top: 20px;
+                }
+            }
+        }
+        .apply-btn {
+            margin-top: 20px;
+            a {
+                color: #00A7F7;
+                &:focus,
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+        &.active {
+            .btn {
+                background: rgba(0, 167, 247, 0.1);
+                color: #00A7F7;
+                box-shadow: none;
+                border-color: #00A7F7;
+            }
+        }
+    } // .date_filter {
+    //     float: left;
+    //     .datepicker {
+    //     	// padding: 9px 25px;
+    //     	// border-radius: 4px;
+    //     	// border: 1px solid #dce0e0 !important;
+    //     }
+    // }
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.invoice_list {
+    // margin-top: 16px;
+    padding: 0;
+    color: #364462;
+    li {
+        margin-bottom: 16px;
+        background: #fff;
+        border: 1px solid #ECEFF1;
+        box-shadow: 0 2px 4px 0 rgba(236, 239, 241, 1);
+        padding: 10px 12px;
+        list-style-type: none;
+        width: 100%;
+        .invoice-wrapper {
+            display: flex;
+            align-items: center;
+            .col {
+                flex-grow: 1;
+                flex-basis: 0;
+                &.checkbox-col {
+                    max-width: 30px;
+                }
+            }
+        }
+    }
+}
+
+.select-acts {
+	margin-top: 30px;
+}
+
+.new_items {
+    padding: 8px 50px 8px 15px;
+    background: #F9FAFC;
+    position: relative;
+    header {
+        font-size: 21px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .item-row {
+    	position: relative;
+    }
+    .delete-item {
+        position: absolute;
+	    right: -16px;
+	    bottom: 21px;
+	    font-size: 18px;
+    }
+}
+
+.new_item-add {
+	margin-top: 0;
+    margin-bottom: 10px;
+}
+
+
+.dropzone {
+    border: 2px dashed #00A7F7;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    background: rgba(0, 0, 0, 0.01);
+    .dz-message {
+        padding-top: 15px;
+        font-size: 13px;
+        color: rgba(0, 0, 0, 0.3);
+        font-weight: 400;
+        opacity: 1;
+    }
+}

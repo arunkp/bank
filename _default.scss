@@ -1,0 +1,83 @@
+body {
+    background: #F9FAFC;
+    color: #253238;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.form-group {
+    label {
+        color: #77909D;
+        font-weight: 500;
+    }
+    input,
+    select,
+    textarea {
+        border: 1px solid #E6ECEF;
+        box-shadow: none;
+        border-radius: 4px;
+    }
+    span.error {
+        position: absolute;
+        font-size: 12px;
+        color: #F13C20;
+    }
+}
+
+.btn {
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 18px;
+    &.btn-primary {
+        background: #00A7F7;
+        border: none;
+    }
+}
+
+.uploadbox {
+    .dropzone {
+        border: 2px dashed #00A7F7;
+        border-radius: 5px;
+        margin-bottom: 30px;
+        background: rgba(0, 0, 0, 0.01);
+        .dz-message {
+            padding-top: 15px;
+            font-size: 13px;
+            color: rgba(0, 0, 0, 0.3);
+            font-weight: 400;
+            opacity: 1;
+        }
+    }
+}
+
+/* Important part */
+.modal-dialog{
+    overflow-y: initial !important
+}
+.modal-body{
+    height: 70vh;
+    overflow-y: auto;
+}
+
+.top_header {
+    text-align: center;
+    padding-top: 30px;
+    h1 {
+        margin-top: 0;
+        font-size: 26px;
+        font-weight: 400;
+        letter-spacing: 0.5px;
+        margin-bottom: 30px;
+    }
+    p {
+        padding-top: 5px;
+        line-height: 22px;
+        letter-spacing: 0.5px;
+        margin-bottom: 40px;
+    }
+}

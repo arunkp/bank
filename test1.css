@@ -1,5 +1,5 @@
 body {
-  background: #E2E6E9;
+  background: #F9FAFC;
   color: #253238;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu; }
 
@@ -8,13 +8,47 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0; }
 
+.form-group label {
+  color: #77909D;
+  font-weight: 500; }
+.form-group input,
+.form-group select,
+.form-group textarea {
+  border: 1px solid #E6ECEF;
+  box-shadow: none;
+  border-radius: 4px; }
+.form-group span.error {
+  position: absolute;
+  font-size: 12px;
+  color: #F13C20; }
+
 .btn {
   padding-left: 25px;
-  padding-right: 25px; }
+  padding-right: 25px;
+  border-radius: 18px; }
   .btn.btn-primary {
     background: #00A7F7;
-    border-radius: 18px;
     border: none; }
+
+.uploadbox .dropzone {
+  border: 2px dashed #00A7F7;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  background: rgba(0, 0, 0, 0.01); }
+  .uploadbox .dropzone .dz-message {
+    padding-top: 15px;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.3);
+    font-weight: 400;
+    opacity: 1; }
+
+/* Important part */
+.modal-dialog {
+  overflow-y: initial !important; }
+
+.modal-body {
+  height: 70vh;
+  overflow-y: auto; }
 
 .top_header {
   text-align: center;
@@ -30,20 +64,6 @@ input[type=number]::-webkit-outer-spin-button {
     line-height: 22px;
     letter-spacing: 0.5px;
     margin-bottom: 40px; }
-
-.form-group label {
-  color: #77909D;
-  font-weight: 500; }
-.form-group input,
-.form-group select,
-.form-group textarea {
-  border: 1px solid #E6ECEF;
-  box-shadow: none;
-  border-radius: 4px; }
-.form-group span.error {
-  position: absolute;
-  font-size: 12px;
-  color: #F13C20; }
 
 .final_msg {
   position: absolute;
@@ -100,11 +120,11 @@ input[type=number]::-webkit-outer-spin-button {
       .final_msg .msg.accepted .phone_num, .final_msg .msg.rejected .phone_num {
         color: #00A7F7;
         font-weight: 600; }
-    .final_msg .msg.rejected {
-      display: block !important; }
-      .final_msg .msg.rejected .acc_num {
-        color: #77909D;
-        background: #fff; }
+    .final_msg .msg.rejected .acc_num {
+      color: #77909D;
+      background: #fff; }
+    .final_msg .msg.accepted {
+      display: block; }
 
 .fade-in {
   -webkit-animation: fadein 2s;
@@ -146,15 +166,20 @@ input[type=number]::-webkit-outer-spin-button {
     opacity: 0; }
   to {
     opacity: 1; } }
+.dz-max-files-reached {
+  pointer-events: none;
+  cursor: default; }
+
 .signup_form {
   background: #fff;
   border-radius: 4px;
   padding-bottom: 30px;
+  margin-bottom: 40px;
   box-shadow: 0 2px 17px 0 rgba(0, 0, 0, 0.08); }
   .signup_form .tab_container ul.nav-tabs.nav.nav-justified {
     padding-left: 25px;
     padding-right: 25px;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08); }
+    border-bottom: 1px solid #ECEFF1; }
     .signup_form .tab_container ul.nav-tabs.nav.nav-justified li a {
       background: #fff;
       border: none;
@@ -256,17 +281,6 @@ input[type=number]::-webkit-outer-spin-button {
     .signup_form .tab_container .tab-content .tab-pane .sub-text {
       color: #77909D;
       font-weight: 500; }
-    .signup_form .tab_container .tab-content .tab-pane .uploadbox .dropzone {
-      border: 2px dashed #00A7F7;
-      border-radius: 5px;
-      margin-bottom: 30px;
-      background: rgba(0, 0, 0, 0.01); }
-      .signup_form .tab_container .tab-content .tab-pane .uploadbox .dropzone .dz-message {
-        padding-top: 15px;
-        font-size: 13px;
-        color: rgba(0, 0, 0, 0.3);
-        font-weight: 400;
-        opacity: 1; }
 
 .disabledTab {
   pointer-events: none; }
@@ -274,4 +288,4 @@ input[type=number]::-webkit-outer-spin-button {
 .bold {
   font-weight: bold; }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=test1.css.map */
