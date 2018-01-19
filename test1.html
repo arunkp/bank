@@ -6,8 +6,8 @@
     <title>Bank Account</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="dropzone.css">
-    <link rel="stylesheet" href="test1.css">
+    <link rel="stylesheet" href="css/dropzone.css">
+    <link rel="stylesheet" href="css/test1.css">
 </head>
 
 <body>
@@ -29,7 +29,7 @@
             			<div class="acc_num">
             				79393436278346
             			</div>
-            			<h1><img src="circle-check.svg" alt="">Your Account is Ready!</h1>
+            			<h1><img src="img/circle-check.svg" alt="">Your Account is Ready!</h1>
             			<p>Thank you for setting up your bank account with us. You will soon receive a call from our team about the next the steps.</p>
             		</div>
             		<div class="rejected msg">
@@ -39,7 +39,7 @@
             			<div class="acc_num">
             				79393436278346
             			</div>
-            			<h1><img src="error-icon.svg" alt="">Your Application has been rejected!</h1>
+            			<h1><img src="img/error-icon.svg" alt="">Your Application has been rejected!</h1>
             			<p>We are sorry that your application has been rejected, we will reach you in this regard on your mobile number. Also, feel free to reach us on <a href="tel:+917286363637" class="phone_num">+917286363637</a> between 9am to 6pm (Mon-Fri). </p>
             		</div>
             	</section>
@@ -228,13 +228,14 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
-    <script src="store.everything.min.js"></script>
-    <script src="dropzone.js"></script>
+    <script src="js/store.everything.min.js"></script>
+    <script src="js/dropzone.js"></script>
     <script>
-    $(".nav-tabs a").click(function() {
-        $(this).tab('show');
-    });
+    
     $(document).ready(function() {
+    	$(".nav-tabs a").click(function() {
+	        $(this).tab('show');
+	    });
         var messages = {
             'fullNameRequired': ""
         };
@@ -431,18 +432,6 @@
             $(".final_msg").fadeIn("slow");
             $(".signup_form").fadeOut("fast");
         });
-
-        $('#filedrop').on('drop', function() {
-		  var args = Array.prototype.slice.call(arguments);
-		  // Look at the output in you browser console, if there is something interesting
-		  console.log(args);
-		});
-
-		$('#filedrop').on('selectedfiles', function() {
-		  var args = Array.prototype.slice.call(arguments);
-		  // Look at the output in you browser console, if there is something interesting
-		  console.log(args);
-		});
     })
     </script>
 </body>

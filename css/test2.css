@@ -80,6 +80,7 @@ nav.navbar {
 
 .list-title {
   margin-top: 16px;
+  margin-bottom: 16px;
   font-weight: 600; }
   .list-title span {
     font-size: 14px; }
@@ -158,28 +159,59 @@ nav.navbar {
 .bold {
   font-weight: 600; }
 
-.invoice_list {
-  padding: 0;
-  color: #364462; }
-  .invoice_list li {
-    margin-bottom: 16px;
-    background: #fff;
-    border: 1px solid #ECEFF1;
-    box-shadow: 0 2px 4px 0 #eceff1;
-    padding: 10px 12px;
-    list-style-type: none;
-    width: 100%; }
-    .invoice_list li .invoice-wrapper {
-      display: flex;
-      align-items: center; }
-      .invoice_list li .invoice-wrapper .col {
-        flex-grow: 1;
-        flex-basis: 0; }
-        .invoice_list li .invoice-wrapper .col.checkbox-col {
-          max-width: 30px; }
-
-.select-acts {
-  margin-top: 30px; }
+.content {
+  background: #fff; }
+  .content .select_acts {
+    padding: 13px 0 10px 0;
+    border-top: 1px solid #ECEFF1;
+    border-left: 1px solid #ECEFF1;
+    border-right: 1px solid #ECEFF1; }
+    .content .select_acts .checkbox {
+      margin-top: 0;
+      margin-right: 0;
+      margin-bottom: 0; }
+      .content .select_acts .checkbox label {
+        padding-left: 34px; }
+      .content .select_acts .checkbox .btn {
+        border: none;
+        padding-top: 8px;
+        padding-right: 15px;
+        border-radius: 3px; }
+        .content .select_acts .checkbox .btn:focus, .content .select_acts .checkbox .btn:hover {
+          background: none;
+          box-shadow: none; }
+  .content .select_acts-btns .btn {
+    border-radius: 3px;
+    margin-right: 8px;
+    padding: 6px 12px; }
+    .content .select_acts-btns .btn:last-of-type {
+      margin-right: 0; }
+  .content .invoice_list {
+    border-top: 1px solid #ECEFF1;
+    padding: 0;
+    color: #364462; }
+    .content .invoice_list > li {
+      background: #fff;
+      border-bottom: 1px solid #ECEFF1;
+      border-right: 1px solid #ECEFF1;
+      border-left: 1px solid #ECEFF1;
+      padding: 10px 12px;
+      list-style-type: none;
+      width: 100%; }
+      .content .invoice_list > li .invoice-wrapper {
+        display: flex;
+        align-items: center; }
+        .content .invoice_list > li .invoice-wrapper .col {
+          flex-grow: 1;
+          flex-basis: 0; }
+          .content .invoice_list > li .invoice-wrapper .col.li-menu {
+            max-width: 30px; }
+            .content .invoice_list > li .invoice-wrapper .col.li-menu button {
+              background: none;
+              box-shadow: none;
+              border: none; }
+          .content .invoice_list > li .invoice-wrapper .col.checkbox-col {
+            max-width: 30px; }
 
 .new_items {
   padding: 8px 50px 8px 15px;
@@ -212,5 +244,14 @@ nav.navbar {
     color: rgba(0, 0, 0, 0.3);
     font-weight: 400;
     opacity: 1; }
+
+.multiselect-container label {
+  padding: 10px 20px 10px 40px !important; }
+
+.user2 .select_acts {
+  display: none; }
+.user2 .invoice_list .checkbox-col,
+.user2 .invoice_list .li-menu {
+  display: none; }
 
 /*# sourceMappingURL=test2.css.map */
